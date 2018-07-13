@@ -7,8 +7,9 @@ void setup(){
 }
 
 void draw(){
+  background(50);
   pushStyle();
   player.draw();
-  player.keyPressed();
+  player.update();
   popStyle();
 }

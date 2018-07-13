@@ -11,27 +11,24 @@ class Player {
   }
   
   void update(){
-  }
-  
-  void keyPressed(){
     if(key == CODED)
     {
-      if (keyCode == LEFT)
+      if (keyPressed && keyCode == LEFT)
       {   
         this.position.x -= 1;
       }
       
-      if (keyCode == RIGHT)
+      if (keyPressed && keyCode == RIGHT)
       {  
         this.position.x += 1;
       }
       
-      if (keyCode == UP)
+      if (keyPressed && keyCode == UP)
       {    
         this.position.y -= 1;
       }
       
-      if (keyCode == DOWN)
+      if (keyPressed && keyCode == DOWN)
       {   
         this.position.y += 1;
       }
