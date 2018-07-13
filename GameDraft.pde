@@ -1,16 +1,14 @@
 Player player;
-int Px = (int)width/2;
-int Py = (int)height/2;
-PVector playerPosition = new PVector(Px,Py);
 
 void setup(){
-  size(320,200);
+  size(640,480);
+  PVector playerPosition = new PVector(width/2,height/2);
   player = new Player(playerPosition);
 }
 
-void update(){
-}
-
 void draw(){
+  pushStyle();
   player.draw();
+  player.keyPressed();
+  popStyle();
 }
